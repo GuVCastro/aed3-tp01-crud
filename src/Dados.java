@@ -11,7 +11,7 @@ public class Dados {
         System.out.println("__________________________________________\n");
     }
 
-    public static void create_conta(String nome, String cpf, String cidade, Float saldo_inicial, RandomAccessFile fout) throws IOException {
+    public void create_conta(String nome, String cpf, String cidade, Float saldo_inicial, RandomAccessFile fout) throws IOException {
         int ultimo_id, proximo_id;
         byte ba[];
 
@@ -40,7 +40,7 @@ public class Dados {
         System.out.println(conta);
     }
 
-    public static void update_conta(Contas conta_autualizada, RandomAccessFile fout) throws IOException {
+    public void update_conta(Contas conta_autualizada, RandomAccessFile fout) throws IOException {
         long pos;
         int tam_registro;
         byte lapide, ba[], conta_novo_registro[];
@@ -107,7 +107,7 @@ public class Dados {
         }
     }
 
-    public static void pesquisa_conta(int id_conta, RandomAccessFile fin) throws IOException {
+    public void pesquisa_conta(int id_conta, RandomAccessFile fin) throws IOException {
         byte lapide;
         int tam_registro;
         byte ba[];
@@ -148,7 +148,7 @@ public class Dados {
         }
     }
 
-    public static void delete_conta(int id_conta, RandomAccessFile fout) throws IOException{
+    public void delete_conta(int id_conta, RandomAccessFile fout) throws IOException{
         long pos;
         int tam_registro;
         byte lapide, ba[];
@@ -196,7 +196,7 @@ public class Dados {
         }
     }
 
-    public static void transferencia_contas(int id_conta1, int id_conta2, float valor, RandomAccessFile fout) throws IOException {
+    public void transferencia_contas(int id_conta1, int id_conta2, float valor, RandomAccessFile fout) throws IOException {
         long pos_conta1 = -1, pos_conta2 = -1;
         int tam_registro;
         byte lapide, ba[];

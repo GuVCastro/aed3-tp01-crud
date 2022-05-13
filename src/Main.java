@@ -43,7 +43,7 @@ public class Main {
             do {
                 // Menu principal
                 System.out.println("_________________________________________");
-                System.out.println("      Conta Bancária - TP02 - AED3      ");
+                System.out.println("      Conta Bancária - TP01 - AED3      ");
                 System.out.println(" Por:   Gustavo Valadares Castro,       ");
                 System.out.println("        Matheus Crivellari Bueno Jorge  ");
                 System.out.println("_________________________________________");
