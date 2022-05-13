@@ -241,7 +241,8 @@ public class Dados {
                     }
                 }
 
-                if(flag1_encontrou && flag2_encontrou) break;
+                if(flag1_encontrou && flag2_encontrou)
+                    break;
             }
             catch(EOFException err) {
                 break;
