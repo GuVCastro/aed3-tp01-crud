@@ -62,7 +62,7 @@ public class Contas {
         dos.writeUTF(nome);
         dos.writeUTF(cpf);
         dos.writeUTF(cidade);
-        dos.writeShort(qtd_transferencias);
+        dos.writeInt(qtd_transferencias);
         dos.writeFloat(saldo);
 
         return baos.toByteArray();
@@ -76,7 +76,7 @@ public class Contas {
         nome = dis.readUTF();
         cpf = dis.readUTF();
         cidade = dis.readUTF();
-        qtd_transferencias = dis.readShort();
+        qtd_transferencias = dis.readInt();
         saldo = dis.readFloat();
     }
 }
